@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<div class="body"></div>
+<div id="portfolio-section"></div>
+<div id="asdf" class="project-Container" style="top:50vh;height:50vh;box-shadow: 0 0 60px rgb(25,250,250);border-bottom: 1vh solid rgb(25,250,250);">
+
+  <p id="project-title" class="project-Title">Title</p>
+  <p id="project-description" class = "project-Description"  onmouseover="toggleDescriptionDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleDescriptionDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Description </p>
+  <div id="description-dropdown-content" class="project-Description-content">
+    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
+  </div>
+
+  <p id="project-approach" class="project-Approach" onmouseover="toggleDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Approach </p>
+  <div id="dropdown-content" class="project-Approach-content">
+    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
+  </div>
+
+  <p id="project-problems" style="position:absolute;left:25vw;top:17.5vh;font-size:4vh;z-index:1;" onmouseover="toggleProblemsDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleProblemsDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Problems </p>
+  <div id="problems-dropdown-content" style="display:none;position:absolute;left:15vw;top:25vh;font-size:2vh;z-index:1;width:40vw;">
+    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
+  </div>
+  
+  <p id="project-requirements" style="position:absolute;left:25vw;top:22.5vh;font-size:4vh;z-index:1;" onmouseover="toggleRequirementsDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleRequirementsDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Requirements </p>
+  <div id="requirements-dropdown-content" style="display:none;position:absolute;left:27.5vw;top:30vh;font-size:2vh;z-index:1;width:40vw;">
+    <p>yap yap <br> yap  yap yap<br> yap<br> yap<br> yap<br>yap yap yap </p>
+  </div>
+
+  <div style="z-index:1;position:absolute;left:62.5vw;top:5vh;width:20vw;height:40vh;border:5px solid rgb(25,250,250);border-radius:10px;overflow:hidden;">
+    <img style="width:100%;height:100%;" src="https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif" alt="Project GIF" />
+  </div>
+
+  <div style="z-index:2;position:absolute;left:2.5vw;top:-2.5vh;width:8vw;height:20vh;border:2px solid rgb(25,250,250);border-radius:10px;overflow:hidden;background:rgb(200,200,200);display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:0;margin:0;">
+    <img style="height:40%;z-index:1;" src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" />
+    <div style="height:1px;width:80%;background:rgb(25, 250, 250);margin:0;padding:0;"></div>
+    <img style="height:40%;z-index:1;" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" />
+</div>
+</div>
+</div>
+
+<div class='mouse'></div>
+<div class='cursor second-cursor'></div>
+<div id="custom-cursor"></div>
+<a class="cursor-link">link</a>
+
+
+<div id="slider-container">
+  <div id="slider-background"></div>
+  <div id="slider-progress"></div>
+  <div id="slider-nub">2020-01-01</div>
+</div>
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<style>
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgb(25, 250, 250);
+  }
+  50% {
+    box-shadow: 0 20px 60px rgb(0, 255, 255);
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(25, 250, 250);
+  }
+}
+
+#asdf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+    mask-image: radial-gradient(circle, black, transparent);
+  }
+
+body {
+  margin: 0;
+  height: 100vh;
+  cursor: none;  /* Hide the default cursor */  /* Prevent scrollbars when circles grow */
+}
+
+.shockwave {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(235, 235, 235, 0.5);
+  pointer-events: none;  /* Don't let the shockwave interfere with other elements */
+  animation: shockwave-animation 2s ease-out forwards;
+  z-index:2;
+}
+
+@keyframes shockwave-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+* {
+  cursor: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2230%22 height=%2230%22 viewBox=%220 0 30 30%22%3E%3Ccircle cx=%227%22 cy=%227%22 r=%227%22 fill=%22rgb(200,200,200)%22 /%3E%3C/svg%3E'), auto;
+}
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wrapper p{
+    color:#ecf0f1;
+    text-shadow:0px 0px 5px #999;
+}
+
+.wrapper pre{
+  background-color:white;
+  display:table;
+  margin:-5px auto;
+  padding:5px 10px;
+  font-size:12px;
+  color:#bdc3c7; 
+}
+
+
+
+.body {
+  height: 1780vh; /* For testing scrolling */
+  margin: 0;
+background:rgb(51,51,51);
+z-index:0;
+position:absolute;
+width:150vw;
+left:-50vw;
+top:10vh;
+}
+
+#slider-container {
+  position: absolute;
+  top: 50vh;
+  left: 4vw;
+  width: 30px;
+  height: 1680vh;
+}
+
+#slider-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  border-radius: 15px;
+}
+
+#slider-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(255, 99, 71), rgb(70, 130, 180));
+  border-radius: 15px;
+}
+
+#slider-nub {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5vw;
+  height: 5vw;
+  background-color: #fff;
+  border: 2px solid #0073aa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+  color: #333;
+  text-align: center;
+  z-index: 10;
+}
+.project-Container{
+  position:absolute;
+  left:10vw;
+  width:85vw;
+  background:rgb(100,100,100);
+  z-index:1;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  box-shadow: 0 0 60px rgb(25,250,250);
+  border-bottom: 1vh solid rgb(25,250,250);
+}
+
+.project-Title{
+  position:relative;
+  top:-5vh;
+  font-size:6vh;
+  z-index:1;
+  text-align: center;
+}
+
+.project-Description{
+  position:relative;
+  left:25vw;
+  top:-7.5vh;
+  font-size:2vw;
+  z-index:1;
+  width: 12.5vw;
+}
+
+.project-Description-content{
+  display:none;
+  position:relative;
+  left:20vw;
+  top:-10vh;
+  font-size:1vw;
+  z-index:1;
+  width:40vw;
+}
+
+.project-Approach{
+  position:relative;
+  left:25vw;
+  top:-10vh;
+  font-size:2vw;
+  z-index:1;
+  width: 12.5vw;
+}
+
+.project-Approach-content{
+  display:none;
+  position:relative;
+  left:20vw;
+  top:-12.5vh;
+  font-size:1vw;
+  z-index:1;
+  width:40vw;
+}
+
+.project-Problems{
+  position:relative;
+  left:25vw;
+  top:-12.5vh;
+  font-size:2vw;
+  z-index:1;
+  width: 12.5vw;
+}
+
+.project-Problems-content{
+  display:none;
+  position:relative;
+  left:20vw;
+  top:-15vh;
+  font-size:1vw;
+  z-index:1;
+  width:40vw;
+}
+
+.project-Requirements{
+  position:relative;
+  left:25vw;
+  top:-15vh;
+  font-size:2vw;
+  z-index:1;
+  width: 15vw;
+}
+
+.project-Requirements-content{
+  display:none;
+  position:relative;
+  left:20vw;
+  top:-17.5vh;
+  font-size:1vw;
+  z-index:1;
+  width:40vw;
+}
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+</style>
+<script>
+
+function toggleDescriptionDropdown(index) {
+  if(index>=0){
+    console.log(index);
+  var dropdown = document.getElementById(`description-dropdown-content-${index}`);
+  var projectApproach = document.getElementById(`project-approach-${index}`);
+  var projectProblems = document.getElementById(`project-problems-${index}`);
+  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  }else{
+  var dropdown = document.getElementById("description-dropdown-content");
+  var projectApproach = document.getElementById("project-approach");
+  var projectProblems = document.getElementById("project-problems");
+  var projectRequirements = document.getElementById("project-requirements");
+  }
+
+  if (dropdown.style.display == "none" || dropdown.style.display === '') {
+    dropdown.style.display = "block";
+    // projectApproach.style.top = "-10vh";
+    //projectProblems.style.top = "-12.5vh";
+    //projectRequirements.style.top = "-15vh";
+  } else {
+    dropdown.style.display = "none";
+    // projectApproach.style.top = "-10vh";
+    // projectProblems.style.top = "-12.5vh";
+    // projectRequirements.style.top = "-15vh";
+  }
+}
+
+function toggleProblemsDropdown(index) {
+  if(index!=null){
+  var dropdown = document.getElementById(`problems-dropdown-content-${index}`);
+  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  }else{
+  var dropdown = document.getElementById("problems-dropdown-content");
+  var projectRequirements = document.getElementById("project-requirements");
+  }
+
+  if (dropdown.style.display === "none" || dropdown.style.display === '') {
+    dropdown.style.display = "block";
+    projectRequirements.style.top = "-12.5vh";
+  } else {
+    dropdown.style.display = "none";
+    projectRequirements.style.top = "-15vh";
+  }
+}
+
+function toggleApproachDropdown(index) {
+  if(index!=null){
+  var dropdown = document.getElementById(`approach-dropdown-content-${index}`);
+  var projectProblems = document.getElementById(`project-problems-${index}`);
+  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  }else{
+  var dropdown = document.getElementById("dropdown-content");
+  var projectProblems = document.getElementById("project-problems");
+  var projectRequirements = document.getElementById("project-requirements");
+  }
+
+  if (dropdown.style.display === "none" || dropdown.style.display === '') {
+    dropdown.style.display = "block";
+    projectProblems.style.top = "-12.5vh";
+    projectRequirements.style.top = "-15vh";
+  } else {
+    dropdown.style.display = "none";
+    projectProblems.style.top = "-12.5vh";
+    projectRequirements.style.top = "-15vh";
+  }
+}
+
+function toggleRequirementsDropdown(index) {
+  if(index!=null){
+  var dropdown = document.getElementById(`requirements-dropdown-content-${index}`);
+  }else{
+  var dropdown = document.getElementById("requirements-dropdown-content");
+  }
+
+  if (dropdown.style.display === "none" || dropdown.style.display === '') {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+portfolio = [
+{
+ title:"Humble Beginnings",
+ start: "2020-08-25 ",
+ end: "2020-09-26",
+ color:"rgb(25,250,250)",
+ desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
+ mouseEffect:"Soldier",
+ requirements:"just learn the language,learn to think like a programmer, honestly i love it, the ability to make anything you can think off all you need is a computer, other forms of engineering have a cost but not programming you can get away with it for basically free which was perfect for me",
+ approach:"i used online schools and lots of youtube videos to learn ",
+ technologies:["java"],
+ problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
+},
+{
+ title:"Car Game",
+ start: "Feburary 25, 2021",
+ end: "march 26, 2021",
+ color:"rgb(25,250,250)",
+ desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
+ mouseEffect:"Soldier",
+ requirements:"just learn the language,learn to think like a programmer, honestly i love it, the ability to make anything you can think off all you need is a computer, other forms of engineering have a cost but not programming you can get away with it for basically free which was perfect for me",
+ approach:"i used online schools and lots of youtube videos to learn ",
+ technologies:["java"],
+ problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
+
+}
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const portfolioContainer = document.getElementById("portfolio-section"); // Ensure this ID exists
+  if (!portfolioContainer) {
+    console.error("Element with ID 'portfolio-section' not found.");
+    return;
+  }
+
+  portfolio.forEach((project, index) => {
+  const projectDiv = document.createElement("div");
+  projectDiv.className = "project-Container";
+  projectDiv.id = `project-${index}`; // Assign a unique ID based on the index
+
+  const startDate = new Date("2020-01-01");
+  const projectStartDate = new Date(project.start);
+  const daysSinceStart = Math.floor((projectStartDate - startDate) / (1000 * 60 * 60 * 24));
+  const topPosition = `${daysSinceStart}vh`;
+
+  projectDiv.style.cssText = `top:${topPosition};height:50vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:relative;`;
+
+  projectDiv.innerHTML = `
+    <p id="title-${index}" class="project-Title">${project.title}</p>
+
+    <p id="project-description-${index}" class="project-Description"  
+   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleDescriptionDropdown(${index})"
+   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleDescriptionDropdown(${index})">
+  <span style="font-size: 2vh;">▼</span> Description 
+</p>
+<div id="description-dropdown-content-${index}" class="project-Description-content">
+      <p>${project.desc}</p>
+    </div>
+
+    <p id="project-approach-${index}" class="project-Approach"  
+   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleApproachDropdown(${index})"
+   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleApproachDropdown(${index})">
+  <span style="font-size: 2vh;">▼</span> Approach 
+</p>
+<div id="approach-dropdown-content-${index}" class="project-Approach-content">
+      <p>${project.approach}</p>
+    </div>
+
+    <p id="project-problems-${index}" class="project-Problems"  
+   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleProblemsDropdown(${index})"
+   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleProblemsDropdown(${index})">
+  <span style="font-size: 2vh;">▼</span> Problems 
+</p>
+<div id="problems-dropdown-content-${index}" class="project-Problems-content">
+      <p>${project.problems}</p>
+    </div>
+
+    <p id="project-requirements-${index}" class="project-Requirements"  
+   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleRequirementsDropdown(${index})"
+   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleRequirementsDropdown(${index})">
+  <span style="font-size: 2vh;">▼</span> Requirements 
+</p>
+<div id="requirements-dropdown-content-${index}" class="project-Requirements-content">
+      <p>${project.requirements}</p>
+    </div>
+
+    <div id="gif-container-${index}" style="z-index:1;position:absolute;left:62.5vw;top:5vh;width:20vw;height:40vh;border:5px solid ${project.color};border-radius:10px;overflow:hidden;">
+      <img style="width:100%;height:100%;" src="${project.gif}" alt="Project GIF" />
+    </div>
+
+    <div id="technologies-${index}" style="z-index:2;position:absolute;left:2.5vw;top:-2.5vh;width:8vw;height:20vh;border:2px solid ${project.color};border-radius:10px;overflow:hidden;background:rgb(200,200,200);display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:0;margin:0;">
+      ${project.technologies.map((tech, techIndex) => `
+        <img id="tech-${index}-${techIndex}" style="height:40%;z-index:1;" src="${getTechLogo(tech)}" alt="${tech} Logo" />
+        <div id="tech-divider-${index}-${techIndex}" style="height:1px;width:80%;background:${project.color};margin:0;padding:0;"></div>
+      `).join('')}
+    </div>
+  `;
+
+  portfolioContainer.appendChild(projectDiv);
+});
+
+
+  function getTechLogo(tech) {
+    const logos = {
+      java: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+      python: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    };
+    return logos[tech] || "#";
+  }
+});
+
+function toggleDropdownHover(triggerElement, dropdownId, show) {
+    const dropdown = document.getElementById(dropdownId);
+    if (dropdown) {
+      dropdown.style.display = show ? "block" : "none";
+      const arrow = triggerElement.querySelector("span");
+      if (arrow) {
+        arrow.innerHTML = show ? "▶" : "▼";
+      }
+    }
+  }
+
+
+
+
+document.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+  // Define the start and end colors for the gradient transitions
+const startColor = { r: 255, g: 99, b: 71 };   // Soft Red
+const midColor = { r: 70, g: 130, b: 180 };    // Cool Blue
+const endColor = { r: 230, g: 230, b: 250 };   // Lavender
+
+let r, g, b; // Final color values
+
+// Calculate scroll percentage (assuming you already have it)
+
+
+if(scrollPercent<25){
+  const t = 0; // Normalize the scroll percentage to be between 0 and 1
+  r = Math.round(startColor.r + (midColor.r - startColor.r) * t);
+  g = Math.round(startColor.g + (midColor.g - startColor.g) * t);
+  b = Math.round(startColor.b + (midColor.b - startColor.b) * t);
+}else if (scrollPercent>=25 && scrollPercent < 45) {
+  // Transition from startColor to midColor before reaching halfway
+  const t = (scrollPercent-45) / 45; // Normalize the scroll percentage to be between 0 and 1
+  r = Math.round(startColor.r + (midColor.r - startColor.r) * t);
+  g = Math.round(startColor.g + (midColor.g - startColor.g) * t);
+  b = Math.round(startColor.b + (midColor.b - startColor.b) * t);
+} else if (scrollPercent >= 45 && scrollPercent <= 50) {
+  // Abrupt color transition in the 45-50% range
+  r = midColor.r;
+  g = midColor.g;
+  b = midColor.b;
+} else {
+  // Transition from midColor to endColor after 50%
+  const t = (scrollPercent - 50) / 50; // Normalize the scroll percentage to be between 0 and 1
+  r = Math.round(midColor.r + (endColor.r - midColor.r) * t);
+  g = Math.round(midColor.g + (endColor.g - midColor.g) * t);
+  b = Math.round(midColor.b + (endColor.b - midColor.b) * t);
+}
+
+// Set the color as the background for the progress bar
+const progress = document.getElementById("slider-progress");
+progress.style.background = `rgb(${r}, ${g}, ${b})`;
+
+  // Update the progress height
+  progress.style.height = `${scrollPercent}%`;
+
+  // Update the nub position
+  const nub = document.getElementById("slider-nub");
+  const sliderHeight = document.getElementById("slider-container").offsetHeight;
+  var scrollOffset = (scrollPercent / 100) * sliderHeight-20
+  nub.style.top = `${scrollOffset}px`;
+
+  // Update the nub date
+  const startDate = new Date(2020, 0, 1); // Jan 1, 2020
+  const endDate = new Date(); // Current date
+  const totalDays = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24)); // Total days
+  const scrollDays = Math.round((scrollPercent / 100) * totalDays);
+  const interpolatedDate = new Date(startDate.getTime() + scrollDays * 24 * 60 * 60 * 1000);
+
+  const formattedDate = `${interpolatedDate.getFullYear()}-${String(interpolatedDate.getMonth() + 1).padStart(2, "0")}-${String(interpolatedDate.getDate()).padStart(2, "0")}`;
+  nub.textContent = formattedDate;
+});
+timeout=Date.now();
+//document.addEventListener('mousemove', (e) => {
+const box = document.getElementById('asdf');
+
+  // Add the 'mouseenter' event listener
+let mouseradiate=false;
+var savee;
+  box.addEventListener('mouseenter', (e) => {
+ mouseradiate=true;
+savee=e
+});
+box.addEventListener('mouseleave', (e) => {
+mouseradiate=false;
+});
+
+
+function main(){
+if(mouseradiate){
+box.addEventListener('mousemove', (e) => {
+savee=e;
+});
+var e=savee;
+console.log(e+" "+savee);
+    const shockwave = document.createElement('div');
+    shockwave.classList.add('shockwave');
+
+    // Set its position based on the mouse cursor
+    const size = Math.random() * 20 + 30;  // Randomize the size of each shockwave (between 30px and 50px)
+    shockwave.style.width = `${size}px`;
+    shockwave.style.height = `${size}px`;
+    shockwave.style.left = `${e.pageX - size / 2}px`;  // Center the circle on the cursor
+    shockwave.style.top = `${e.pageY - size / 2}px`;
+
+    // Append the shockwave to the body
+    document.body.appendChild(shockwave);
+
+    // Remove the shockwave after the animation ends to keep the DOM clean
+    shockwave.addEventListener('animationend', () => {
+        shockwave.remove();
+    });
+}
+}
+setInterval(main,1000);
+
+</script>
+</body>
+</html>
