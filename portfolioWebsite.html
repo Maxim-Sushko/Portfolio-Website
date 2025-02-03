@@ -3,40 +3,7 @@
     <body>
 <div class="body"></div>
 <div id="portfolio-section"></div>
-<div id="asdf" class="project-Container" style="top:50vh;height:50vh;box-shadow: 0 0 60px rgb(25,250,250);border-bottom: 1vh solid rgb(25,250,250);">
 
-  <p id="project-title" class="project-Title">Title</p>
-  <p id="project-description" class = "project-Description"  onmouseover="toggleDescriptionDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleDescriptionDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Description </p>
-  <div id="description-dropdown-content" class="project-Description-content">
-    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
-  </div>
-
-  <p id="project-approach" class="project-Approach" onmouseover="toggleDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Approach </p>
-  <div id="dropdown-content" class="project-Approach-content">
-    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
-  </div>
-
-  <p id="project-problems" style="position:absolute;left:25vw;top:17.5vh;font-size:4vh;z-index:1;" onmouseover="toggleProblemsDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleProblemsDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Problems </p>
-  <div id="problems-dropdown-content" style="display:none;position:absolute;left:15vw;top:25vh;font-size:2vh;z-index:1;width:40vw;">
-    <p>Yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
-  </div>
-  
-  <p id="project-requirements" style="position:absolute;left:25vw;top:22.5vh;font-size:4vh;z-index:1;" onmouseover="toggleRequirementsDropdown(); this.querySelector('span').innerHTML = '▶';" onmouseout="toggleRequirementsDropdown(); this.querySelector('span').innerHTML = '▼';"><span style="font-size: 2vh;">▼</span> Requirements </p>
-  <div id="requirements-dropdown-content" style="display:none;position:absolute;left:27.5vw;top:30vh;font-size:2vh;z-index:1;width:40vw;">
-    <p>yap yap <br> yap  yap yap<br> yap<br> yap<br> yap<br>yap yap yap </p>
-  </div>
-
-  <div style="z-index:1;position:absolute;left:62.5vw;top:5vh;width:20vw;height:40vh;border:5px solid rgb(25,250,250);border-radius:10px;overflow:hidden;">
-    <img style="width:100%;height:100%;" src="https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif" alt="Project GIF" />
-  </div>
-
-  <div style="z-index:2;position:absolute;left:2.5vw;top:-2.5vh;width:8vw;height:20vh;border:2px solid rgb(25,250,250);border-radius:10px;overflow:hidden;background:rgb(200,200,200);display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:0;margin:0;">
-    <img style="height:40%;z-index:1;" src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" />
-    <div style="height:1px;width:80%;background:rgb(25, 250, 250);margin:0;padding:0;"></div>
-    <img style="height:40%;z-index:1;" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" />
-</div>
-</div>
-</div>
 
 <div class='mouse'></div>
 <div class='cursor second-cursor'></div>
@@ -277,16 +244,16 @@ top:10vh;
   width:40vw;
 }
 
-.project-Requirements{
+.project-Accomplishments{
   position:relative;
   left:25vw;
   top:-15vh;
   font-size:2vw;
   z-index:1;
-  width: 15vw;
+  width: 20vw;
 }
 
-.project-Requirements-content{
+.project-Accomplishments-content{
   display:none;
   position:relative;
   left:20vw;
@@ -322,42 +289,42 @@ function toggleDescriptionDropdown(index) {
   var dropdown = document.getElementById(`description-dropdown-content-${index}`);
   var projectApproach = document.getElementById(`project-approach-${index}`);
   var projectProblems = document.getElementById(`project-problems-${index}`);
-  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  var projectAccomplishments= document.getElementById(`project-Accomplishments-${index}`);
   }else{
   var dropdown = document.getElementById("description-dropdown-content");
   var projectApproach = document.getElementById("project-approach");
   var projectProblems = document.getElementById("project-problems");
-  var projectRequirements = document.getElementById("project-requirements");
+  var projectAccomplishments= document.getElementById("project-Accomplishments");
   }
 
   if (dropdown.style.display == "none" || dropdown.style.display === '') {
     dropdown.style.display = "block";
     // projectApproach.style.top = "-10vh";
     //projectProblems.style.top = "-12.5vh";
-    //projectRequirements.style.top = "-15vh";
+    //projectAccomplishments.style.top = "-15vh";
   } else {
     dropdown.style.display = "none";
     // projectApproach.style.top = "-10vh";
     // projectProblems.style.top = "-12.5vh";
-    // projectRequirements.style.top = "-15vh";
+    // projectAccomplishments.style.top = "-15vh";
   }
 }
 
 function toggleProblemsDropdown(index) {
   if(index!=null){
   var dropdown = document.getElementById(`problems-dropdown-content-${index}`);
-  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  var projectAccomplishments= document.getElementById(`project-Accomplishments-${index}`);
   }else{
   var dropdown = document.getElementById("problems-dropdown-content");
-  var projectRequirements = document.getElementById("project-requirements");
+  var projectAccomplishments= document.getElementById("project-Accomplishments");
   }
 
   if (dropdown.style.display === "none" || dropdown.style.display === '') {
     dropdown.style.display = "block";
-    projectRequirements.style.top = "-12.5vh";
+    projectAccomplishments.style.top = "-12.5vh";
   } else {
     dropdown.style.display = "none";
-    projectRequirements.style.top = "-15vh";
+    projectAccomplishments.style.top = "-15vh";
   }
 }
 
@@ -365,29 +332,29 @@ function toggleApproachDropdown(index) {
   if(index!=null){
   var dropdown = document.getElementById(`approach-dropdown-content-${index}`);
   var projectProblems = document.getElementById(`project-problems-${index}`);
-  var projectRequirements = document.getElementById(`project-requirements-${index}`);
+  var projectAccomplishments= document.getElementById(`project-Accomplishments-${index}`);
   }else{
   var dropdown = document.getElementById("dropdown-content");
   var projectProblems = document.getElementById("project-problems");
-  var projectRequirements = document.getElementById("project-requirements");
+  var projectAccomplishments= document.getElementById("project-Accomplishments");
   }
 
   if (dropdown.style.display === "none" || dropdown.style.display === '') {
     dropdown.style.display = "block";
     projectProblems.style.top = "-12.5vh";
-    projectRequirements.style.top = "-15vh";
+    projectAccomplishments.style.top = "-15vh";
   } else {
     dropdown.style.display = "none";
     projectProblems.style.top = "-12.5vh";
-    projectRequirements.style.top = "-15vh";
+    projectAccomplishments.style.top = "-15vh";
   }
 }
 
-function toggleRequirementsDropdown(index) {
+function toggleAccomplishmentsDropdown(index) {
   if(index!=null){
-  var dropdown = document.getElementById(`requirements-dropdown-content-${index}`);
+  var dropdown = document.getElementById(`Accomplishments-dropdown-content-${index}`);
   }else{
-  var dropdown = document.getElementById("requirements-dropdown-content");
+  var dropdown = document.getElementById("Accomplishments-dropdown-content");
   }
 
   if (dropdown.style.display === "none" || dropdown.style.display === '') {
@@ -400,30 +367,146 @@ function toggleRequirementsDropdown(index) {
 portfolio = [
 {
  title:"Humble Beginnings",
- start: "2020-08-25 ",
- end: "2020-09-26",
- color:"rgb(25,250,250)",
+ start: "2020-03-25",
+ end: "2020-05-5",
+ color:"rgb(250,250,25)",
  desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
  mouseEffect:"Soldier",
- requirements:"just learn the language,learn to think like a programmer, honestly i love it, the ability to make anything you can think off all you need is a computer, other forms of engineering have a cost but not programming you can get away with it for basically free which was perfect for me",
+ Accomplishments:"first time using programmer like thinking",
  approach:"i used online schools and lots of youtube videos to learn ",
  technologies:["java"],
  problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
 },
 {
  title:"Car Game",
- start: "Feburary 25, 2021",
- end: "march 26, 2021",
- color:"rgb(25,250,250)",
- desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
+ start: "June 25, 2020",
+ end: "August 1, 2020",
+ color:"rgb(250,250,25)",
+ desc:"I've made many smaller projects before this but this one is the only one worth putting on the portfolio, i really liked how it turned out and i ended up using it again for another future project",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
- requirements:"just learn the language,learn to think like a programmer, honestly i love it, the ability to make anything you can think off all you need is a computer, other forms of engineering have a cost but not programming you can get away with it for basically free which was perfect for me",
- approach:"i used online schools and lots of youtube videos to learn ",
+ Accomplishments:"Simple game that i can make without a game engine, and scale up 1000 times to run with a future project",
+ approach:"i've been coding for a couple months and was starting to get the hang of this java thing",
  technologies:["java"],
- problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
-
+ problems:"the collision on each ray was a bit tricky for it to not get stuck in the wall as the hitbox had to change based off which face the car was seeing, AND ON TOP OF THAT WITHOUT SPAMMING IF STATEMENTS SLOWING DOWN THE ENTIRE GAME"
+},
+{
+ title:"My First AI",
+ start: "August 25, 2020",
+ end: "October 16, 2021",
+ color:"rgb(250,250,25)",
+ desc:"OK some time has elapsed and i'm starting to get better at this programming thing i have an idea for an AI algorithm that i think could work.     THIS ALGORITHM WAS ACTUALLY 1000s of times FASTER THAN ANY OTHER AI ALGORITHM OUT THERE I JUST DON'T HAVE ACESS TO EVEN A MID-RANGE COMPUTER ",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments:"casually made a AI training algorithm that trains 1000s of times faster then any other algorithm out there (i can prove it too)",
+ approach:" i had to learn a lot about AI and how to make an AI that could learn to play a game without any prior knowledge of the game",
+ technologies:["java"],
+ problems:"the whole array thing was very tricky in Java and looking back now i shouldn't have used arrays I should have used something else but you live and you learn"
+},
+{
+ title:"My First HTML/CSS/JS",
+ start: "Octover 20, 2021",
+ end: "janurary 20, 2022",
+ color:"rgb(250,25,250)",
+ desc:"I wanted a language that was easier and able to put variales into images nativly so JS was the only solution. during this time i was making multiple smaller projects jsut to learn the language but this one is probably the prettiest out of all of them. it's a simple loading screen",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.24.13-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "my first lines of Frontend Stack technologies",
+ approach:" web3schooles.com was really helpfull but mostly practise practise practise",
+ technologies:["js"],
+ problems:"i was a little tricky learning a new language but overall Javascript is easier than JAVA so it wasn't too bad, and HTML CSS was a breeze",
+},
+{
+ title:"C Game (multiple choice game)",
+ start: "Janurary 25, 2022",
+ end: "feburary 25, 2022",
+ color:"rgb(250,25,250)",
+ desc:"i've made a couple smaller games in this time period but this one is the most fun one to play",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "simple mulitiple choice game type game",
+ approach:"this one i kept super simple and just nested if statements and kept state var to keep track of what was happening",
+ technologies:["js"],
+ problems:"the paths would keep growing and growing as one desition would lead to three more so the outcomes woudl grow exponentially",
+},
+{
+ title:"Multiplayer Game",
+ start: "March 16, 2022",
+ end: "September 8, 2022",
+ color:"rgb(250,25,250)",
+ desc:"This was a very fun game i made. It was multipler and hosted on node.js for serverside code. there were multiple lobbies and gamemodes like tag, infected, maze runner, and this fun multistage survival game (the gif is from locally run code with no collision the main one is on a file somewhere in the rp4 )",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.43.37-PM-1.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "Created and optimized a multiplayer game with multiple lobbies gamemodes and even a shop and inventory and points system for each player",
+ approach:"started as a simple tag game, then infected, then a maze runner, then multistage survival game, this was multiplayer and hosted locally on my Raspberyy pi 4b, it ran pretty fast and was FEATURE RICH",
+ technologies:["js"],
+ problems:"there were some issues with performance and syncing between games but i managed to fix them all and the game ran smoothly and in sync with all players",
+},
+{
+ title:"3D Renderer",
+ start: "September 20, 2022",
+ end: "December 15, 2022",
+ color:"rgb(250,25,250)",
+ desc:" a Simple 3d renderer i was messing around with matrix multiplication and 3d space",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.51.51-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "created a simple 3d renderer and modeler",
+ approach:"i had to learn a lot about 3d space and how to render it on a 2d screen",
+ technologies:["js"],
+ problems:"the math was a little tricky but i managed to get it all working and it looks pretty good",
+},
+{
+ title:"SUPAI \n (fastest AI training ever made)",
+ start: "December 20, 2022",
+ end: "October 23, 2023",
+ color:"rgb(250,25,250)",
+ desc:"left: my algorithm.<br>  right:their algorithm. <br>  while algorithms for ChatGpt and the like require running it millions of times for minor improvements my algorithms guarentee improvements everytime it's run and the ai itself runs 1000s of times faster (i have proof if your interested)",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.07.30-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "rewrote my AI algorithm in JS and added a couple more features to it, algorithm is still 1000s of times faster(i still have proof)",
+ approach:"rewrote the algorithm i made in java into JS and made it more modulare so it's easier to plug in any game into it",
+ technologies:["js"],
+ problems:"once again managing all the arrays was tricky but i managed to do it in a simple-enough way that it's easy to understand and use",
+},
+{
+ title:"Varius E-commerce sites",
+ start: "July 20, 2023",
+ end: "March 23, 2024",
+ color:"rgb(250,25,250)",
+ desc:" various e-commerce sites i made for my business ideas, i'll only show one example. An AI GPS that uses AI celbrity voices to tell you directions and yell at you if you miss a turn lol. the gif doesn't work bc the site isn't live anymore so i'm showing a locally run copy but no GPS bc site isn't live",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.36.48-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "Used GOOGLE API to get the directions and then used my AI to get the voice and then used my own code to put it all together",
+ approach:"i had to learn a lot about google API and how to use it to get directions and then how to use my AI to get the voice and then how to put it all together",
+ technologies:["js"],
+ problems:"the google API was a little tricky to use but i managed to get it all working and it looks pretty good",
+},
+{
+ title:"HOMEMADE CDN WEBSITE",
+ start: "April 30, 2024",
+ end: "august 23 ,2024",
+ color:"rgb(150,150,250)",
+ desc: "my Mom needed a way to upload and download all the family photos into one place easily to i made a website on our LAN to do just that. it runs on node.js and python so this should put me at the top of the list for the next family reunion and hiring list for backend developers",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "optimized and ran a CDN / scrapbook website on our LAN to make it super fast and easy to use",
+ approach:"used node.js for backend with some python here and there and html css JS for clientside logic",
+ technologies:["js"],
+ problems:"there was a lot of data i had to work with so i learned a lot about optimizations",
+},
+{
+ title:"Morrison paint",
+ start: "September 20, 2024",
+ end: "Janurary 15, 2025",
+ color:"rgb(250,25,250)",
+desc: " morpaint.com <br> first professional gig i was the webmaster for morpaint.com a CA based car paint business. i worked professionally with a team to deliver the product the client was looking for",
+ gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-6.33.43-PM.gif",
+ mouseEffect:"Soldier",
+ Accomplishments: "worked with a team to create morpaint.com to the clients liking",
+ approach:"I used WP and lots of communication between the me and the client to help design it to their liking",
+ technologies:["js"],
+ problems:"we went through a couple design changes but overall was smooth sailing",
 }
 ];
 
@@ -441,10 +524,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startDate = new Date("2020-01-01");
   const projectStartDate = new Date(project.start);
+  const projectEndDate = new Date(project.end);
+  const totalDays = Math.floor((projectEndDate - projectStartDate) / (1000 * 60 * 60 * 24));
   const daysSinceStart = Math.floor((projectStartDate - startDate) / (1000 * 60 * 60 * 24));
   const topPosition = `${daysSinceStart}vh`;
 
-  projectDiv.style.cssText = `top:${topPosition};height:50vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:relative;`;
+  projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;`;
 
   projectDiv.innerHTML = `
     <p id="title-${index}" class="project-Title">${project.title}</p>
@@ -476,16 +561,16 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>${project.problems}</p>
     </div>
 
-    <p id="project-requirements-${index}" class="project-Requirements"  
-   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleRequirementsDropdown(${index})"
-   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleRequirementsDropdown(${index})">
-  <span style="font-size: 2vh;">▼</span> Requirements 
+    <p id="project-Accomplishments-${index}" class="project-Accomplishments"  
+   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleAccomplishmentsDropdown(${index})"
+   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleAccomplishmentsDropdown(${index})">
+  <span style="font-size: 2vh;">▼</span> Accomplishments
 </p>
-<div id="requirements-dropdown-content-${index}" class="project-Requirements-content">
-      <p>${project.requirements}</p>
+<div id="Accomplishments-dropdown-content-${index}" class="project-Accomplishments-content">
+      <p>${project.Accomplishments}</p>
     </div>
 
-    <div id="gif-container-${index}" style="z-index:1;position:absolute;left:62.5vw;top:5vh;width:20vw;height:40vh;border:5px solid ${project.color};border-radius:10px;overflow:hidden;">
+    <div id="gif-container-${index}" style="z-index:1;position:absolute;left:62.5vw;top:10%;width:20vw;height:80%;max-height:40vh;border:5px solid ${project.color};border-radius:10px;overflow:hidden;">
       <img style="width:100%;height:100%;" src="${project.gif}" alt="Project GIF" />
     </div>
 
@@ -500,14 +585,14 @@ document.addEventListener("DOMContentLoaded", () => {
   portfolioContainer.appendChild(projectDiv);
 });
 
-
-  function getTechLogo(tech) {
-    const logos = {
-      java: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-      python: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-    };
-    return logos[tech] || "#";
-  }
+function getTechLogo(tech) {
+  const logos = {
+    java: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    python: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    js: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+  };
+  return logos[tech] || "#";
+}
 });
 
 function toggleDropdownHover(triggerElement, dropdownId, show) {
