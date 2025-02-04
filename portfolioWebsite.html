@@ -2,8 +2,18 @@
 <html>
     <body>
 <div class="body"></div>
+
+<div style="position: absolute; top: 30vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
+  <h1 style="font-size:3vh;">Welcome</h1>
+  <p style="font-size:2vh">This is my portfolio website where I try my best to show what i've been working on<br>If TL:DR <br> just read the title and accomplishments.</p>
+</div>
+
 <div id="portfolio-section"></div>
 
+<div style="position: absolute; top: 1900vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
+  <h1 style="font-size:3vh;">WOW you read my entire portfolio</h1>
+  <p style="font-size:2vh">That's a sign you're impressed. Email me here: <a href="mailto:maximigorsushko@gmail.com">your-email@example.com</a></p>
+</div>
 
 <div class='mouse'></div>
 <div class='cursor second-cursor'></div>
@@ -57,7 +67,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 2000vh;
   cursor: none;  /* Hide the default cursor */  /* Prevent scrollbars when circles grow */
 }
 
@@ -111,7 +121,7 @@ html, body {
 
 
 .body {
-  height: 1780vh; /* For testing scrolling */
+  height: 1975vh; /* For testing scrolling */
   margin: 0;
 background:rgb(51,51,51);
 z-index:0;
@@ -126,7 +136,7 @@ top:10vh;
   top: 50vh;
   left: 4vw;
   width: 30px;
-  height: 1680vh;
+  height: 1915vh;
 }
 
 #slider-background {
@@ -399,7 +409,7 @@ portfolio = [
  desc:"OK some time has elapsed and i'm starting to get better at this programming thing i have an idea for an AI algorithm that i think could work.     THIS ALGORITHM WAS ACTUALLY 1000s of times FASTER THAN ANY OTHER AI ALGORITHM OUT THERE I JUST DON'T HAVE ACESS TO EVEN A MID-RANGE COMPUTER ",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments:"casually made a AI training algorithm that trains 1000s of times faster then any other algorithm out there (i can prove it too)",
+ Accomplishments:"studied all the Ai algorithms like evolution and deep learning <br> then made my own thats 1000s of times faster",
  approach:" i had to learn a lot about AI and how to make an AI that could learn to play a game without any prior knowledge of the game",
  technologies:["java"],
  problems:"the whole array thing was very tricky in Java and looking back now i shouldn't have used arrays I should have used something else but you live and you learn"
@@ -459,19 +469,19 @@ portfolio = [
 {
  title:"SUPAI \n (fastest AI training ever made)",
  start: "December 20, 2022",
- end: "October 23, 2023",
+ end: "August 23, 2023",
  color:"rgb(250,25,250)",
  desc:"left: my algorithm.<br>  right:their algorithm. <br>  while algorithms for ChatGpt and the like require running it millions of times for minor improvements my algorithms guarentee improvements everytime it's run and the ai itself runs 1000s of times faster (i have proof if your interested)",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.07.30-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "rewrote my AI algorithm in JS and added a couple more features to it, algorithm is still 1000s of times faster(i still have proof)",
+ Accomplishments: "restudied and deeply studied all the AI algorithms like evolution and deep learning <br> then made my own thats 1000s of times faster",
  approach:"rewrote the algorithm i made in java into JS and made it more modulare so it's easier to plug in any game into it",
  technologies:["js"],
  problems:"once again managing all the arrays was tricky but i managed to do it in a simple-enough way that it's easy to understand and use",
 },
 {
  title:"Varius E-commerce sites",
- start: "July 20, 2023",
+ start: "October 20, 2023",
  end: "March 23, 2024",
  color:"rgb(250,25,250)",
  desc:" various e-commerce sites i made for my business ideas, i'll only show one example. An AI GPS that uses AI celbrity voices to tell you directions and yell at you if you miss a turn lol. the gif doesn't work bc the site isn't live anymore so i'm showing a locally run copy but no GPS bc site isn't live",
@@ -500,10 +510,10 @@ portfolio = [
  start: "September 20, 2024",
  end: "Janurary 15, 2025",
  color:"rgb(250,25,250)",
-desc: " morpaint.com <br> first professional gig i was the webmaster for morpaint.com a CA based car paint business. i worked professionally with a team to deliver the product the client was looking for",
+desc: " morpaint.com <br> first professional gig I was the webmaster for morpaint.com a CA based car paint business. i worked professionally with a team to deliver the product the client was looking for",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-6.33.43-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "worked with a team to create morpaint.com to the clients liking",
+ Accomplishments: "worked with a team to create morpaint.com to the clients liking <br> go to morpaint.com",
  approach:"I used WP and lots of communication between the me and the client to help design it to their liking",
  technologies:["js"],
  problems:"we went through a couple design changes but overall was smooth sailing",
@@ -521,15 +531,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectDiv = document.createElement("div");
   projectDiv.className = "project-Container";
   projectDiv.id = `project-${index}`; // Assign a unique ID based on the index
-
-  const startDate = new Date("2020-01-01");
+  const startDate = new Date("2025-01-01");
   const projectStartDate = new Date(project.start);
   const projectEndDate = new Date(project.end);
   const totalDays = Math.floor((projectEndDate - projectStartDate) / (1000 * 60 * 60 * 24));
-  const daysSinceStart = Math.floor((projectStartDate - startDate) / (1000 * 60 * 60 * 24));
-  const topPosition = `${daysSinceStart}vh`;
+  const daysSinceStart = Math.floor((startDate - projectEndDate) / (1000 * 60 * 60 * 24));
+  const topPosition = `${daysSinceStart+140}vh`;
 
-  projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;`;
+  projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);background-size: 20px 20px;`;
 
   projectDiv.innerHTML = `
     <p id="title-${index}" class="project-Title">${project.title}</p>
@@ -652,24 +661,23 @@ if(scrollPercent<25){
 const progress = document.getElementById("slider-progress");
 progress.style.background = `rgb(${r}, ${g}, ${b})`;
 
-  // Update the progress height
-  progress.style.height = `${scrollPercent}%`;
+// Update the progress height
+progress.style.height = `${scrollPercent}%`;
 
-  // Update the nub position
-  const nub = document.getElementById("slider-nub");
-  const sliderHeight = document.getElementById("slider-container").offsetHeight;
-  var scrollOffset = (scrollPercent / 100) * sliderHeight-20
-  nub.style.top = `${scrollOffset}px`;
+// Update the nub position
+const nub = document.getElementById("slider-nub");
+const sliderHeight = document.getElementById("slider-container").offsetHeight;
+var scrollOffset = (scrollPercent / 100) * sliderHeight - 20;
+nub.style.top = `${scrollOffset}px`;
+// Update the nub date
+const startDate = new Date(2020, 0, 1); // Jan 1, 2020
+const totalDays = 1915; // Total days represented by 1915vh (approx. 5 years and 3 months)
+const scrollDays = Math.round((scrollPercent / 100) * totalDays); // Calculate the correct number of days based on scroll percentage
+const interpolatedDate = new Date(startDate.getTime() + (totalDays - scrollDays) * 24 * 60 * 60 * 1000); // Invert the date calculation
 
-  // Update the nub date
-  const startDate = new Date(2020, 0, 1); // Jan 1, 2020
-  const endDate = new Date(); // Current date
-  const totalDays = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24)); // Total days
-  const scrollDays = Math.round((scrollPercent / 100) * totalDays);
-  const interpolatedDate = new Date(startDate.getTime() + scrollDays * 24 * 60 * 60 * 1000);
-
-  const formattedDate = `${interpolatedDate.getFullYear()}-${String(interpolatedDate.getMonth() + 1).padStart(2, "0")}-${String(interpolatedDate.getDate()).padStart(2, "0")}`;
-  nub.textContent = formattedDate;
+const options = { year: 'numeric', month: 'short', day: 'numeric' };
+const formattedDate = interpolatedDate.toLocaleDateString('en-US', options);
+nub.textContent = formattedDate;
 });
 timeout=Date.now();
 //document.addEventListener('mousemove', (e) => {
