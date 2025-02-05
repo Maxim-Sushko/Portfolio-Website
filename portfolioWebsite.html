@@ -15,10 +15,35 @@
   <p style="font-size:2vh">That's a sign you're impressed. Email me here: <a href="mailto:maximigorsushko@gmail.com">your-email@example.com</a></p>
 </div>
 
-<div class='mouse'></div>
-<div class='cursor second-cursor'></div>
-<div id="custom-cursor"></div>
-<a class="cursor-link">link</a>
+<div class='mouse' style="z-index:10000; position: fixed; width: 20px; height: 20px; background: rgb(10,10,10); border-radius: 50%; pointer-events: none; transform-origin: center;"></div>
+
+<script>
+  document.addEventListener("mousemove", (e) => {
+    let mouse = document.querySelector('.mouse');
+    if (!mouse) {
+      mouse = document.createElement('div');
+      mouse.className = 'mouse';
+      document.body.appendChild(mouse);
+    }
+    mouse.style.left = `${e.pageX - 10}px`; // Center the circle on the cursor
+    mouse.style.top = `${e.pageY - 10 - window.scrollY}px`; // Account for scroll position
+  });
+  document.body.style.cursor = 'none'; // Hide the default cursor
+
+  document.addEventListener("scroll", () => {
+    const mouse = document.querySelector('.mouse');
+    if (mouse) {
+      mouse.style.transition = 'height 0.5s ease, border-radius 0.5s ease'; // Add smooth transition
+      mouse.style.height = '40px'; // Increase the height to make it a pill shape
+      mouse.style.borderRadius = '10px'; // Rounded corners
+
+      setTimeout(() => {
+        mouse.style.height = '20px'; // Reset the height
+        mouse.style.borderRadius = '50%'; // Reset to circle
+      }, 1000);
+    }
+  });
+</script>
 
 
 <div id="slider-container">
@@ -90,10 +115,26 @@ body {
     opacity: 0;
   }
 }
-
+/*
 * {
   cursor: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2230%22 height=%2230%22 viewBox=%220 0 30 30%22%3E%3Ccircle cx=%227%22 cy=%227%22 r=%227%22 fill=%22rgb(200,200,200)%22 /%3E%3C/svg%3E'), auto;
 }
+*/
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
 html, body {
     height: 100%;
 }
@@ -383,7 +424,7 @@ portfolio = [
  desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
  mouseEffect:"Soldier",
- Accomplishments:"first time using programmer like thinking",
+ Accomplishments:"first time thinking like a programmer",
  approach:"i used online schools and lots of youtube videos to learn ",
  technologies:["java"],
  problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
@@ -396,7 +437,7 @@ portfolio = [
  desc:"I've made many smaller projects before this but this one is the only one worth putting on the portfolio, i really liked how it turned out and i ended up using it again for another future project",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments:"Simple game that i can make without a game engine, and scale up 1000 times to run with a future project",
+ Accomplishments:"Simple game made without a game engine that can be scaled up 1000s of times",
  approach:"i've been coding for a couple months and was starting to get the hang of this java thing",
  technologies:["java"],
  problems:"the collision on each ray was a bit tricky for it to not get stuck in the wall as the hitbox had to change based off which face the car was seeing, AND ON TOP OF THAT WITHOUT SPAMMING IF STATEMENTS SLOWING DOWN THE ENTIRE GAME"
@@ -409,7 +450,7 @@ portfolio = [
  desc:"OK some time has elapsed and i'm starting to get better at this programming thing i have an idea for an AI algorithm that i think could work.     THIS ALGORITHM WAS ACTUALLY 1000s of times FASTER THAN ANY OTHER AI ALGORITHM OUT THERE I JUST DON'T HAVE ACESS TO EVEN A MID-RANGE COMPUTER ",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments:"studied all the Ai algorithms like evolution and deep learning <br> then made my own thats 1000s of times faster",
+ Accomplishments:"studied all the widespread AI algorithms and made my own that trained ai more effectivly",
  approach:" i had to learn a lot about AI and how to make an AI that could learn to play a game without any prior knowledge of the game",
  technologies:["java"],
  problems:"the whole array thing was very tricky in Java and looking back now i shouldn't have used arrays I should have used something else but you live and you learn"
@@ -435,7 +476,7 @@ portfolio = [
  desc:"i've made a couple smaller games in this time period but this one is the most fun one to play",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
  mouseEffect:"Soldier",
- Accomplishments: "simple mulitiple choice game type game",
+ Accomplishments: "simple mulitiple choice game",
  approach:"this one i kept super simple and just nested if statements and kept state var to keep track of what was happening",
  technologies:["js"],
  problems:"the paths would keep growing and growing as one desition would lead to three more so the outcomes woudl grow exponentially",
@@ -448,7 +489,7 @@ portfolio = [
  desc:"This was a very fun game i made. It was multipler and hosted on node.js for serverside code. there were multiple lobbies and gamemodes like tag, infected, maze runner, and this fun multistage survival game (the gif is from locally run code with no collision the main one is on a file somewhere in the rp4 )",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.43.37-PM-1.gif",
  mouseEffect:"Soldier",
- Accomplishments: "Created and optimized a multiplayer game with multiple lobbies gamemodes and even a shop and inventory and points system for each player",
+ Accomplishments: "Created a lobby system four different gamemodes a shop an inventory system for each player and streamlined the process to help get more FPS and less latency",
  approach:"started as a simple tag game, then infected, then a maze runner, then multistage survival game, this was multiplayer and hosted locally on my Raspberyy pi 4b, it ran pretty fast and was FEATURE RICH",
  technologies:["js"],
  problems:"there were some issues with performance and syncing between games but i managed to fix them all and the game ran smoothly and in sync with all players",
@@ -500,9 +541,9 @@ portfolio = [
  desc: "my Mom needed a way to upload and download all the family photos into one place easily to i made a website on our LAN to do just that. it runs on node.js and python so this should put me at the top of the list for the next family reunion and hiring list for backend developers",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "optimized and ran a CDN / scrapbook website on our LAN to make it super fast and easy to use",
+ Accomplishments: "optimized and ran a CDN / scrapbook website on our LAN and made it super fast and easy to use",
  approach:"used node.js for backend with some python here and there and html css JS for clientside logic",
- technologies:["js"],
+ technologies:["js","python"],
  problems:"there was a lot of data i had to work with so i learned a lot about optimizations",
 },
 {
@@ -539,7 +580,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const topPosition = `${daysSinceStart+140}vh`;
 
   projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);background-size: 20px 20px;`;
-
+  projectDiv.id = "asdf";
   projectDiv.innerHTML = `
     <p id="title-${index}" class="project-Title">${project.title}</p>
 
@@ -624,42 +665,26 @@ document.addEventListener("scroll", () => {
   const scrollPercent = (scrollTop / scrollHeight) * 100;
 
   // Define the start and end colors for the gradient transitions
-const startColor = { r: 255, g: 99, b: 71 };   // Soft Red
-const midColor = { r: 70, g: 130, b: 180 };    // Cool Blue
-const endColor = { r: 230, g: 230, b: 250 };   // Lavender
-
-let r, g, b; // Final color values
-
-// Calculate scroll percentage (assuming you already have it)
-
-
-if(scrollPercent<25){
-  const t = 0; // Normalize the scroll percentage to be between 0 and 1
-  r = Math.round(startColor.r + (midColor.r - startColor.r) * t);
-  g = Math.round(startColor.g + (midColor.g - startColor.g) * t);
-  b = Math.round(startColor.b + (midColor.b - startColor.b) * t);
-}else if (scrollPercent>=25 && scrollPercent < 45) {
-  // Transition from startColor to midColor before reaching halfway
-  const t = (scrollPercent-45) / 45; // Normalize the scroll percentage to be between 0 and 1
-  r = Math.round(startColor.r + (midColor.r - startColor.r) * t);
-  g = Math.round(startColor.g + (midColor.g - startColor.g) * t);
-  b = Math.round(startColor.b + (midColor.b - startColor.b) * t);
-} else if (scrollPercent >= 45 && scrollPercent <= 50) {
-  // Abrupt color transition in the 45-50% range
-  r = midColor.r;
-  g = midColor.g;
-  b = midColor.b;
-} else {
-  // Transition from midColor to endColor after 50%
-  const t = (scrollPercent - 50) / 50; // Normalize the scroll percentage to be between 0 and 1
-  r = Math.round(midColor.r + (endColor.r - midColor.r) * t);
-  g = Math.round(midColor.g + (endColor.g - midColor.g) * t);
-  b = Math.round(midColor.b + (endColor.b - midColor.b) * t);
-}
-
-// Set the color as the background for the progress bar
 const progress = document.getElementById("slider-progress");
-progress.style.background = `rgb(${r}, ${g}, ${b})`;
+const projects = document.querySelectorAll(".project-Container");
+
+let currentProjectColor = { r: 255, g: 99, b: 71 }; // Default color
+
+projects.forEach((project) => {
+  const rect = project.getBoundingClientRect();
+  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+    const color = project.style.boxShadow.match(/rgb\((\d+), (\d+), (\d+)\)/);
+    if (color) {
+      currentProjectColor = {
+        r: parseInt(color[1]),
+        g: parseInt(color[2]),
+        b: parseInt(color[3]),
+      };
+    }
+  }
+});
+
+progress.style.background = `rgb(${currentProjectColor.r}, ${currentProjectColor.g}, ${currentProjectColor.b})`;
 
 // Update the progress height
 progress.style.height = `${scrollPercent}%`;
@@ -681,47 +706,51 @@ nub.textContent = formattedDate;
 });
 timeout=Date.now();
 //document.addEventListener('mousemove', (e) => {
-const box = document.getElementById('asdf');
+const boxes = document.querySelectorAll('[id^="asdf"]');
 
-  // Add the 'mouseenter' event listener
-let mouseradiate=false;
-var savee;
+boxes.forEach(box => {
+  let mouseradiate = false;
+  let savee;
+
   box.addEventListener('mouseenter', (e) => {
- mouseradiate=true;
-savee=e
-});
-box.addEventListener('mouseleave', (e) => {
-mouseradiate=false;
-});
+    mouseradiate = true;
+    savee = e;
+  });
 
+  box.addEventListener('mouseleave', (e) => {
+    mouseradiate = false;
+  });
 
-function main(){
-if(mouseradiate){
-box.addEventListener('mousemove', (e) => {
-savee=e;
-});
-var e=savee;
-console.log(e+" "+savee);
-    const shockwave = document.createElement('div');
-    shockwave.classList.add('shockwave');
+  function main() {
+    if (mouseradiate) {
+      box.addEventListener('mousemove', (e) => {
+        savee = e;
+      });
+      const e = savee;
+      console.log(e + " " + savee);
+      const shockwave = document.createElement('div');
+      shockwave.classList.add('shockwave');
 
-    // Set its position based on the mouse cursor
-    const size = Math.random() * 20 + 30;  // Randomize the size of each shockwave (between 30px and 50px)
-    shockwave.style.width = `${size}px`;
-    shockwave.style.height = `${size}px`;
-    shockwave.style.left = `${e.pageX - size / 2}px`;  // Center the circle on the cursor
-    shockwave.style.top = `${e.pageY - size / 2}px`;
+      // Set its position based on the mouse cursor
+      const size = Math.random() * 20 + 30;  // Randomize the size of each shockwave (between 30px and 50px)
+      shockwave.style.width = `${size}px`;
+      shockwave.style.height = `${size}px`;
+      const rect = box.getBoundingClientRect();
+      shockwave.style.left = `${e.clientX - rect.left - size / 2}px`;  // Center the circle on the cursor
+      shockwave.style.top = `${e.clientY - rect.top - size / 2}px`;
 
-    // Append the shockwave to the body
-    document.body.appendChild(shockwave);
+      // Append the shockwave to the hovered element
+      box.appendChild(shockwave);
 
-    // Remove the shockwave after the animation ends to keep the DOM clean
-    shockwave.addEventListener('animationend', () => {
+      // Remove the shockwave after the animation ends to keep the DOM clean
+      shockwave.addEventListener('animationend', () => {
         shockwave.remove();
-    });
-}
-}
-setInterval(main,1000);
+      });
+    }
+  }
+
+ // setInterval(main, 1000);
+});
 
 </script>
 </body>
