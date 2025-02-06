@@ -10,9 +10,9 @@
 
 <div id="portfolio-section"></div>
 
-<div style="position: absolute; top: 1900vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
-  <h1 style="font-size:3vh;">WOW you read my entire portfolio</h1>
-  <p style="font-size:2vh">That's a sign you're impressed. Email me here: <a href="mailto:maximigorsushko@gmail.com">your-email@example.com</a></p>
+<div style="position: absolute; top: 950vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
+  <h1 style="font-size:3vh;">Hey! you read my entire portfolio</h1>
+  <p style="font-size:2vh">if you would like to support me please star this on <a href = "https://github.com/Maxim-Sushko/Portfolio-Website">Github</a> <br> or Email me here: <a href="mailto:maximigorsushko@gmail.com">maximigorsushko@gmail.com</a></p>
 </div>
 
 <div class='mouse' style="z-index:10000; position: fixed; width: 20px; height: 20px; background: rgb(10,10,10); border-radius: 50%; pointer-events: none; transform-origin: center;"></div>
@@ -92,7 +92,7 @@
 
 body {
   margin: 0;
-  height: 2000vh;
+  height: 1000vh;
   cursor: none;  /* Hide the default cursor */  /* Prevent scrollbars when circles grow */
 }
 
@@ -136,7 +136,7 @@ body {
 
 
 html, body {
-    height: 100%;
+    height:100%;
 }
 
 .wrapper {
@@ -162,9 +162,9 @@ html, body {
 
 
 .body {
-  height: 1975vh; /* For testing scrolling */
+  height: 1000vh; /* For testing scrolling */
   margin: 0;
-background:rgb(51,51,51);
+background:rgb(40,40,40);
 z-index:0;
 position:absolute;
 width:150vw;
@@ -177,41 +177,69 @@ top:10vh;
   top: 50vh;
   left: 4vw;
   width: 30px;
-  height: 1915vh;
+  height: 900vh;
 }
 
 #slider-background {
+  position: absolute;
+  top: 0vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2vw;
+  height: 100%;
+  background: rgb(40,40,40);
+  border: 0.5vw solid rgb(100, 100, 100);
+  border-top: 3vw solid rgb(100, 100, 100);
+  border-radius: 50px;
+  z-index: 1; /* Ensure background is below progress */
+}
+
+#slider-progress {
+  position: absolute;
+  top: 1vh;
+  left: 53%;
+  transform: translateX(-50%);
+  width: 2vw; /* Make progress thicker */
+  background: linear-gradient(to bottom, rgb(255, 99, 71), rgb(70, 130, 180));
+  border-radius: 15px;
+  z-index: 1; /* Ensure progress is below bars */
+}
+
+#slider-background::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ddd;
-  border-radius: 15px;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+  z-index: 3; /* Ensure bars are above progress */
+  mix-blend-mode: darken; /* Darken the progress color behind it */
+  animation: moveBars 0.5s linear infinite; /* Add animation */
 }
 
-#slider-progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to bottom, rgb(255, 99, 71), rgb(70, 130, 180));
-  border-radius: 15px;
+@keyframes moveBars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 20px; /* Move the bars up */
+  }
 }
 
 #slider-nub {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 5vw;
+  width: 7.5vw;
   height: 5vw;
   background-color: #fff;
-  border: 2px solid #0073aa;
-  border-radius: 50%;
+  border-radius: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: #333;
   text-align: center;
   z-index: 10;
@@ -298,7 +326,7 @@ top:10vh;
 .project-Accomplishments{
   position:relative;
   left:25vw;
-  top:-15vh;
+  top:-10vh;
   font-size:2vw;
   z-index:1;
   width: 20vw;
@@ -308,7 +336,7 @@ top:10vh;
   display:none;
   position:relative;
   left:20vw;
-  top:-17.5vh;
+  top:-12.5vh;
   font-size:1vw;
   z-index:1;
   width:40vw;
@@ -418,8 +446,8 @@ function toggleAccomplishmentsDropdown(index) {
 portfolio = [
 {
  title:"Humble Beginnings",
- start: "2020-03-25",
- end: "2020-05-5",
+ start: "2020-03-15",
+ end: "2020-05-23",
  color:"rgb(250,250,25)",
  desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
@@ -431,8 +459,8 @@ portfolio = [
 },
 {
  title:"Car Game",
- start: "June 25, 2020",
- end: "August 1, 2020",
+ start: "June 1, 2020",
+ end: "August 18, 2020",
  color:"rgb(250,250,25)",
  desc:"I've made many smaller projects before this but this one is the only one worth putting on the portfolio, i really liked how it turned out and i ended up using it again for another future project",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
@@ -458,7 +486,7 @@ portfolio = [
 {
  title:"My First HTML/CSS/JS",
  start: "Octover 20, 2021",
- end: "janurary 20, 2022",
+ end: "janurary 1, 2022",
  color:"rgb(250,25,250)",
  desc:"I wanted a language that was easier and able to put variales into images nativly so JS was the only solution. during this time i was making multiple smaller projects jsut to learn the language but this one is probably the prettiest out of all of them. it's a simple loading screen",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.24.13-PM.gif",
@@ -470,8 +498,8 @@ portfolio = [
 },
 {
  title:"C Game (multiple choice game)",
- start: "Janurary 25, 2022",
- end: "feburary 25, 2022",
+ start: "Janurary 5, 2022",
+ end: "march 10, 2022",
  color:"rgb(250,25,250)",
  desc:"i've made a couple smaller games in this time period but this one is the most fun one to play",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
@@ -508,7 +536,7 @@ portfolio = [
  problems:"the math was a little tricky but i managed to get it all working and it looks pretty good",
 },
 {
- title:"SUPAI \n (fastest AI training ever made)",
+ title:"SUPAI \n (fast and efficient training algorithm)",
  start: "December 20, 2022",
  end: "August 23, 2023",
  color:"rgb(250,25,250)",
@@ -521,7 +549,7 @@ portfolio = [
  problems:"once again managing all the arrays was tricky but i managed to do it in a simple-enough way that it's easy to understand and use",
 },
 {
- title:"Varius E-commerce sites",
+ title:"AI GPS",
  start: "October 20, 2023",
  end: "March 23, 2024",
  color:"rgb(250,25,250)",
@@ -547,7 +575,7 @@ portfolio = [
  problems:"there was a lot of data i had to work with so i learned a lot about optimizations",
 },
 {
- title:"Morrison paint",
+ title:"morpaint.com",
  start: "September 20, 2024",
  end: "Janurary 15, 2025",
  color:"rgb(250,25,250)",
@@ -577,12 +605,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectEndDate = new Date(project.end);
   const totalDays = Math.floor((projectEndDate - projectStartDate) / (1000 * 60 * 60 * 24));
   const daysSinceStart = Math.floor((startDate - projectEndDate) / (1000 * 60 * 60 * 24));
-  const topPosition = `${daysSinceStart+140}vh`;
-
-  projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);background-size: 20px 20px;`;
+  const topPosition = `${(daysSinceStart+140)/2}vh`;
+  projectDiv.style.cssText = `top:${topPosition};height:${totalDays/2}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);`;
+  //projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);`;
   projectDiv.id = "asdf";
   projectDiv.innerHTML = `
     <p id="title-${index}" class="project-Title">${project.title}</p>
+
+    <p style="position: absolute; bottom: 0; left: 3vw; font-size: 2vh; color: white; padding: 5px;"> Total Time: ${Math.floor(totalDays / 30)} months and ${totalDays % 30} days</p>
 
     <p id="project-description-${index}" class="project-Description"  
    onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleDescriptionDropdown(${index})"
@@ -591,24 +621,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </p>
 <div id="description-dropdown-content-${index}" class="project-Description-content">
       <p>${project.desc}</p>
-    </div>
-
-    <p id="project-approach-${index}" class="project-Approach"  
-   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleApproachDropdown(${index})"
-   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleApproachDropdown(${index})">
-  <span style="font-size: 2vh;">▼</span> Approach 
-</p>
-<div id="approach-dropdown-content-${index}" class="project-Approach-content">
-      <p>${project.approach}</p>
-    </div>
-
-    <p id="project-problems-${index}" class="project-Problems"  
-   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleProblemsDropdown(${index})"
-   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleProblemsDropdown(${index})">
-  <span style="font-size: 2vh;">▼</span> Problems 
-</p>
-<div id="problems-dropdown-content-${index}" class="project-Problems-content">
-      <p>${project.problems}</p>
     </div>
 
     <p id="project-Accomplishments-${index}" class="project-Accomplishments"  
