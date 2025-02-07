@@ -3,14 +3,14 @@
     <body>
 <div class="body"></div>
 
-<div style="position: absolute; top: 30vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
-  <h1 style="font-size:3vh;">Welcome</h1>
-  <p style="font-size:2vh">This is my portfolio website where I try my best to show what i've been working on<br>If TL:DR <br> just read the title and accomplishments.</p>
+<div style="position: absolute; top: 30vh; left: 10vw; width: 85vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
+  <h1 style="font-size:5vh;">My Portfolio</h1>
+  <p style="font-size:3vh">Hi! I'm Max, a developer from South Carolina with 5 years of experience, and this is my portfolio website.</p>
 </div>
 
 <div id="portfolio-section"></div>
 
-<div style="position: absolute; top: 950vh; left: 10vw; width: 80vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
+<div style="position: absolute; top: 975vh; left: 10vw; width: 85vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
   <h1 style="font-size:3vh;">Hey! you read my entire portfolio</h1>
   <p style="font-size:2vh">if you would like to support me please star this on <a href = "https://github.com/Maxim-Sushko/Portfolio-Website">Github</a> <br> or Email me here: <a href="mailto:maximigorsushko@gmail.com">maximigorsushko@gmail.com</a></p>
 </div>
@@ -268,7 +268,7 @@ top:10vh;
 
 .project-Description{
   position:relative;
-  left:25vw;
+  left:17.5vw;
   top:-7.5vh;
   font-size:2vw;
   z-index:1;
@@ -280,14 +280,14 @@ top:10vh;
   position:relative;
   left:20vw;
   top:-10vh;
-  font-size:1vw;
+  font-size:3vh;
   z-index:1;
   width:40vw;
 }
 
 .project-Approach{
   position:relative;
-  left:25vw;
+  left:17.5vw;
   top:-10vh;
   font-size:2vw;
   z-index:1;
@@ -325,9 +325,9 @@ top:10vh;
 
 .project-Accomplishments{
   position:relative;
-  left:25vw;
+  left:17.5vw;
   top:-10vh;
-  font-size:2vw;
+  font-size:3vh;
   z-index:1;
   width: 20vw;
 }
@@ -337,9 +337,18 @@ top:10vh;
   position:relative;
   left:20vw;
   top:-12.5vh;
-  font-size:1vw;
+  font-size:3vh;
   z-index:1;
   width:40vw;
+}
+a {
+  color: #4091dd; /* Cyan color for better contrast */
+  text-decoration: underline; /* Remove underline */
+}
+
+a:hover {
+  color: #ff00ff; /* Magenta color on hover */
+  text-decoration: underline; /* Underline on hover */
 }
 
 
@@ -446,13 +455,13 @@ function toggleAccomplishmentsDropdown(index) {
 portfolio = [
 {
  title:"Humble Beginnings",
- start: "2020-03-15",
+ start: "2020-02-25",
  end: "2020-05-23",
  color:"rgb(250,250,25)",
- desc:" the first time i tried my hand at code. it's hard to look at now but everyone has to start somewhere <br> This was inspired by one of the games i used to play where it was 50 players vs 50 players",
+ desc:" My first coding project—rough by my current standards, but everyone starts somewhere.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
  mouseEffect:"Soldier",
- Accomplishments:"first time thinking like a programmer",
+ Accomplishments:"Built a 50v50 team simulation inspired by a game I used to play.",
  approach:"i used online schools and lots of youtube videos to learn ",
  technologies:["java"],
  problems:"first time using programmer like thinking i had to figure out how to get each soldier to find the closest enemy and find how to get to them"
@@ -462,10 +471,10 @@ portfolio = [
  start: "June 1, 2020",
  end: "August 18, 2020",
  color:"rgb(250,250,25)",
- desc:"I've made many smaller projects before this but this one is the only one worth putting on the portfolio, i really liked how it turned out and i ended up using it again for another future project",
+ desc:"Out of many smaller projects, this is the only one worthy of my portfolio.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments:"Simple game made without a game engine that can be scaled up 1000s of times",
+ Accomplishments:"Refined it to the point that I reused it in a future project.",
  approach:"i've been coding for a couple months and was starting to get the hang of this java thing",
  technologies:["java"],
  problems:"the collision on each ray was a bit tricky for it to not get stuck in the wall as the hitbox had to change based off which face the car was seeing, AND ON TOP OF THAT WITHOUT SPAMMING IF STATEMENTS SLOWING DOWN THE ENTIRE GAME"
@@ -473,22 +482,22 @@ portfolio = [
 {
  title:"My First AI",
  start: "August 25, 2020",
- end: "October 16, 2021",
+ end: "September 06, 2021",
  color:"rgb(250,250,25)",
- desc:"OK some time has elapsed and i'm starting to get better at this programming thing i have an idea for an AI algorithm that i think could work.     THIS ALGORITHM WAS ACTUALLY 1000s of times FASTER THAN ANY OTHER AI ALGORITHM OUT THERE I JUST DON'T HAVE ACESS TO EVEN A MID-RANGE COMPUTER ",
+ desc:"Improving my programming skills led me to develop my own  AI algorithm.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments:"studied all the widespread AI algorithms and made my own that trained ai more effectivly",
+ Accomplishments:"studied lots of popular AI training alforithms. Created my own fast AI algorithm but lacked the hardware to fully test its potential.",
  approach:" i had to learn a lot about AI and how to make an AI that could learn to play a game without any prior knowledge of the game",
  technologies:["java"],
  problems:"the whole array thing was very tricky in Java and looking back now i shouldn't have used arrays I should have used something else but you live and you learn"
 },
 {
  title:"My First HTML/CSS/JS",
- start: "Octover 20, 2021",
- end: "janurary 1, 2022",
+ start: "September 15, 2021",
+ end: "December 15, 2021",
  color:"rgb(250,25,250)",
- desc:"I wanted a language that was easier and able to put variales into images nativly so JS was the only solution. during this time i was making multiple smaller projects jsut to learn the language but this one is probably the prettiest out of all of them. it's a simple loading screen",
+ desc:"Learned JavaScript for its ease in rendering visuals. This loading screen is the most polished of my learning projects",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.24.13-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "my first lines of Frontend Stack technologies",
@@ -498,10 +507,10 @@ portfolio = [
 },
 {
  title:"C Game (multiple choice game)",
- start: "Janurary 5, 2022",
+ start: "December 20, 2021",
  end: "march 10, 2022",
  color:"rgb(250,25,250)",
- desc:"i've made a couple smaller games in this time period but this one is the most fun one to play",
+ desc:"Created several small games, but this was the most fun to play.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
  mouseEffect:"Soldier",
  Accomplishments: "simple mulitiple choice game",
@@ -510,14 +519,14 @@ portfolio = [
  problems:"the paths would keep growing and growing as one desition would lead to three more so the outcomes woudl grow exponentially",
 },
 {
- title:"Multiplayer Game",
+ title:"A Multiplayer Game",
  start: "March 16, 2022",
  end: "September 8, 2022",
  color:"rgb(250,25,250)",
- desc:"This was a very fun game i made. It was multipler and hosted on node.js for serverside code. there were multiple lobbies and gamemodes like tag, infected, maze runner, and this fun multistage survival game (the gif is from locally run code with no collision the main one is on a file somewhere in the rp4 )",
+ desc:"Multiplayer game with multiple lobbies and modes, hosted on Node.js.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.43.37-PM-1.gif",
  mouseEffect:"Soldier",
- Accomplishments: "Created a lobby system four different gamemodes a shop an inventory system for each player and streamlined the process to help get more FPS and less latency",
+ Accomplishments: "Developed and hosted game modes like tag, infected, and survival, with a Node.js backend for multiplayer support.",
  approach:"started as a simple tag game, then infected, then a maze runner, then multistage survival game, this was multiplayer and hosted locally on my Raspberyy pi 4b, it ran pretty fast and was FEATURE RICH",
  technologies:["js"],
  problems:"there were some issues with performance and syncing between games but i managed to fix them all and the game ran smoothly and in sync with all players",
@@ -527,7 +536,7 @@ portfolio = [
  start: "September 20, 2022",
  end: "December 15, 2022",
  color:"rgb(250,25,250)",
- desc:" a Simple 3d renderer i was messing around with matrix multiplication and 3d space",
+ desc:"a Simple 3d renderer I was messing around with matrix multiplication and 3d space",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.51.51-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "created a simple 3d renderer and modeler",
@@ -536,14 +545,14 @@ portfolio = [
  problems:"the math was a little tricky but i managed to get it all working and it looks pretty good",
 },
 {
- title:"SUPAI \n (fast and efficient training algorithm)",
+ title:"SUPERAI \n (AI training algorithms)",
  start: "December 20, 2022",
- end: "August 23, 2023",
+ end: "September 23, 2023",
  color:"rgb(250,25,250)",
- desc:"left: my algorithm.<br>  right:their algorithm. <br>  while algorithms for ChatGpt and the like require running it millions of times for minor improvements my algorithms guarentee improvements everytime it's run and the ai itself runs 1000s of times faster (i have proof if your interested)",
+ desc:"Comparison of my algorithm vs. theirs, highlighting efficiency and improvement speed.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.07.30-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "restudied and deeply studied all the AI algorithms like evolution and deep learning <br> then made my own thats 1000s of times faster",
+ Accomplishments: "Designed an AI algorithm that guarantees improvements with each run and operates thousands of times faster than standard models.",
  approach:"rewrote the algorithm i made in java into JS and made it more modulare so it's easier to plug in any game into it",
  technologies:["js"],
  problems:"once again managing all the arrays was tricky but i managed to do it in a simple-enough way that it's easy to understand and use",
@@ -551,38 +560,38 @@ portfolio = [
 {
  title:"AI GPS",
  start: "October 20, 2023",
- end: "March 23, 2024",
+ end: "April 23, 2024",
  color:"rgb(250,25,250)",
- desc:" various e-commerce sites i made for my business ideas, i'll only show one example. An AI GPS that uses AI celbrity voices to tell you directions and yell at you if you miss a turn lol. the gif doesn't work bc the site isn't live anymore so i'm showing a locally run copy but no GPS bc site isn't live",
+ desc:"Created various e-commerce sites for business ideas, including an AI GPS with celebrity voices for directions",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.36.48-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "Used GOOGLE API to get the directions and then used my AI to get the voice and then used my own code to put it all together",
+ Accomplishments: "Integrated the Google Maps API with AI celebrity voices for an AI powerd GPS.",
  approach:"i had to learn a lot about google API and how to use it to get directions and then how to use my AI to get the voice and then how to put it all together",
  technologies:["js"],
  problems:"the google API was a little tricky to use but i managed to get it all working and it looks pretty good",
 },
 {
- title:"HOMEMADE CDN WEBSITE",
+ title:"Custom Media Server",
  start: "April 30, 2024",
- end: "august 23 ,2024",
+ end: "September 10 ,2024",
  color:"rgb(150,150,250)",
- desc: "my Mom needed a way to upload and download all the family photos into one place easily to i made a website on our LAN to do just that. it runs on node.js and python so this should put me at the top of the list for the next family reunion and hiring list for backend developers",
+ desc: "Built a LAN-based website with Node.js and Python to manage family photos.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "optimized and ran a CDN / scrapbook website on our LAN and made it super fast and easy to use",
+ Accomplishments: "Created a simple and efficient photo upload/download system, demonstrating backend skills in Node.js and Python.",
  approach:"used node.js for backend with some python here and there and html css JS for clientside logic",
- technologies:["js","python"],
+ technologies:["python","nodeJS"],
  problems:"there was a lot of data i had to work with so i learned a lot about optimizations",
 },
 {
- title:"morpaint.com",
+ title:"<a href = 'https://morpaint.com'>MORPAINT.com</a>",
  start: "September 20, 2024",
  end: "Janurary 15, 2025",
  color:"rgb(250,25,250)",
-desc: " morpaint.com <br> first professional gig I was the webmaster for morpaint.com a CA based car paint business. i worked professionally with a team to deliver the product the client was looking for",
+desc: "Webmaster for <a href='https://morpaint.com'>MORPAINT.com</a>, a car paint company.",
  gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-6.33.43-PM.gif",
  mouseEffect:"Soldier",
- Accomplishments: "worked with a team to create morpaint.com to the clients liking <br> go to morpaint.com",
+ Accomplishments: " Collaborated with the owner through multiple iterations to refine the site to their vision.",
  approach:"I used WP and lots of communication between the me and the client to help design it to their liking",
  technologies:["js"],
  problems:"we went through a couple design changes but overall was smooth sailing",
@@ -607,28 +616,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const daysSinceStart = Math.floor((startDate - projectEndDate) / (1000 * 60 * 60 * 24));
   const topPosition = `${(daysSinceStart+140)/2}vh`;
   projectDiv.style.cssText = `top:${topPosition};height:${totalDays/2}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);`;
-  //projectDiv.style.cssText = `top:${topPosition};height:${totalDays}vh;box-shadow: 0 0 60px ${project.color};border-bottom: 1vh solid ${project.color};position:absolute;background: rgb(100,100,100);`;
+  
   projectDiv.id = "asdf";
   projectDiv.innerHTML = `
     <p id="title-${index}" class="project-Title">${project.title}</p>
 
     <p style="position: absolute; bottom: 0; left: 3vw; font-size: 2vh; color: white; padding: 5px;"> Total Time: ${Math.floor(totalDays / 30)} months and ${totalDays % 30} days</p>
 
-    <p id="project-description-${index}" class="project-Description"  
-   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleDescriptionDropdown(${index})"
-   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleDescriptionDropdown(${index})">
-  <span style="font-size: 2vh;">▼</span> Description 
-</p>
-<div id="description-dropdown-content-${index}" class="project-Description-content">
+    <p id="project-description-${index}" class="project-Description">
+      <span style="font-size: 4vh;"><strong>Description</strong></span>
+    </p>
+    <div id="description-dropdown-content-${index}" class="project-Description-content" style="display: block;">
       <p>${project.desc}</p>
     </div>
 
-    <p id="project-Accomplishments-${index}" class="project-Accomplishments"  
-   onmouseover = " this.querySelector('span').innerHTML = '▶'; toggleAccomplishmentsDropdown(${index})"
-   onmouseout  = " this.querySelector('span').innerHTML = '▼'; toggleAccomplishmentsDropdown(${index})">
-  <span style="font-size: 2vh;">▼</span> Accomplishments
-</p>
-<div id="Accomplishments-dropdown-content-${index}" class="project-Accomplishments-content">
+    <p id="project-Accomplishments-${index}" class="project-Accomplishments">
+      <span style="font-size: 4vh;"><strong>Accomplishments</strong></span>
+    </p>
+    <div id="Accomplishments-dropdown-content-${index}" class="project-Accomplishments-content" style="display: block;">
       <p>${project.Accomplishments}</p>
     </div>
 
@@ -652,6 +657,7 @@ function getTechLogo(tech) {
     java: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
     python: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
     js: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    nodeJS: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
   };
   return logos[tech] || "#";
 }
