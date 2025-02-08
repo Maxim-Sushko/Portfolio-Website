@@ -64,7 +64,14 @@
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <style>
-
+	*{
+		font-weight:600;
+        word-wrap:normal !important;
+		line-height:normal !important;
+		
+	}
+	
+	
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 20px rgb(25, 250, 250);
@@ -260,14 +267,14 @@ top:10vh;
 
 .project-Title{
   position:relative;
-  top:-5vh;
+  top:0vh;
   font-size:6vh;
   z-index:1;
   text-align: center;
 }
 
 .project-Description{
-  position:relative;
+  position:relative!important;
   left:17.5vw;
   top:-7.5vh;
   font-size:2vw;
@@ -277,18 +284,18 @@ top:10vh;
 
 .project-Description-content{
   display:none;
-  position:relative;
+  position:relative !important;
   left:20vw;
-  top:-10vh;
+  top:-11vh;
   font-size:3vh;
   z-index:1;
   width:40vw;
 }
 
 .project-Approach{
-  position:relative;
+  position:relative !important;
   left:17.5vw;
-  top:-10vh;
+  top:-13.5vh;
   font-size:2vw;
   z-index:1;
   width: 12.5vw;
@@ -296,16 +303,16 @@ top:10vh;
 
 .project-Approach-content{
   display:none;
-  position:relative;
+  position:relative !important;
   left:20vw;
-  top:-12.5vh;
+  top:-16vh;
   font-size:1vw;
   z-index:1;
   width:40vw;
 }
 
 .project-Problems{
-  position:relative;
+  position:relative ;
   left:25vw;
   top:-12.5vh;
   font-size:2vw;
@@ -324,9 +331,9 @@ top:10vh;
 }
 
 .project-Accomplishments{
-  position:relative;
+  position:relative !important;
   left:17.5vw;
-  top:-10vh;
+  top:-11vh;
   font-size:3vh;
   z-index:1;
   width: 20vw;
@@ -334,9 +341,9 @@ top:10vh;
 
 .project-Accomplishments-content{
   display:none;
-  position:relative;
+  position:relative !important;
   left:20vw;
-  top:-12.5vh;
+  top:-14.6vh;
   font-size:3vh;
   z-index:1;
   width:40vw;
@@ -459,7 +466,7 @@ portfolio = [
  end: "2020-05-23",
  color:"rgb(250,250,25)",
  desc:" My first coding project—rough by my current standards, but everyone starts somewhere.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/01/project1.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/01/project1.gif",
  mouseEffect:"Soldier",
  Accomplishments:"Built a 50v50 team simulation inspired by a game I used to play.",
  approach:"i used online schools and lots of youtube videos to learn ",
@@ -472,7 +479,7 @@ portfolio = [
  end: "August 18, 2020",
  color:"rgb(250,250,25)",
  desc:"Out of many smaller projects, this is the only one worthy of my portfolio.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments:"Refined it to the point that I reused it in a future project.",
  approach:"i've been coding for a couple months and was starting to get the hang of this java thing",
@@ -485,7 +492,7 @@ portfolio = [
  end: "September 06, 2021",
  color:"rgb(250,250,25)",
  desc:"Improving my programming skills led me to develop my own  AI algorithm.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.13.16-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments:"studied lots of popular AI training alforithms. Created my own fast AI algorithm but lacked the hardware to fully test its potential.",
  approach:" i had to learn a lot about AI and how to make an AI that could learn to play a game without any prior knowledge of the game",
@@ -498,7 +505,7 @@ portfolio = [
  end: "December 15, 2021",
  color:"rgb(250,25,250)",
  desc:"Learned JavaScript for its ease in rendering visuals. This loading screen is the most polished of my learning projects",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.24.13-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.24.13-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "my first lines of Frontend Stack technologies",
  approach:" web3schooles.com was really helpfull but mostly practise practise practise",
@@ -511,7 +518,7 @@ portfolio = [
  end: "march 10, 2022",
  color:"rgb(250,25,250)",
  desc:"Created several small games, but this was the most fun to play.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.20.34-PM-1.gif",
  mouseEffect:"Soldier",
  Accomplishments: "simple mulitiple choice game",
  approach:"this one i kept super simple and just nested if statements and kept state var to keep track of what was happening",
@@ -524,7 +531,7 @@ portfolio = [
  end: "September 8, 2022",
  color:"rgb(250,25,250)",
  desc:"Multiplayer game with multiple lobbies and modes, hosted on Node.js.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.43.37-PM-1.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.43.37-PM-1.gif",
  mouseEffect:"Soldier",
  Accomplishments: "Developed and hosted game modes like tag, infected, and survival, with a Node.js backend for multiplayer support.",
  approach:"started as a simple tag game, then infected, then a maze runner, then multistage survival game, this was multiplayer and hosted locally on my Raspberyy pi 4b, it ran pretty fast and was FEATURE RICH",
@@ -537,7 +544,7 @@ portfolio = [
  end: "December 15, 2022",
  color:"rgb(250,25,250)",
  desc:"a Simple 3d renderer I was messing around with matrix multiplication and 3d space",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.51.51-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-12.51.51-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "created a simple 3d renderer and modeler",
  approach:"i had to learn a lot about 3d space and how to render it on a 2d screen",
@@ -550,7 +557,7 @@ portfolio = [
  end: "September 23, 2023",
  color:"rgb(250,25,250)",
  desc:"Comparison of my algorithm vs. theirs, highlighting efficiency and improvement speed.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.07.30-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.07.30-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "Designed an AI algorithm that guarantees improvements with each run and operates thousands of times faster than standard models.",
  approach:"rewrote the algorithm i made in java into JS and made it more modulare so it's easier to plug in any game into it",
@@ -563,7 +570,7 @@ portfolio = [
  end: "April 23, 2024",
  color:"rgb(250,25,250)",
  desc:"Created various e-commerce sites for business ideas, including an AI GPS with celebrity voices for directions",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.36.48-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-1.36.48-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "Integrated the Google Maps API with AI celebrity voices for an AI powerd GPS.",
  approach:"i had to learn a lot about google API and how to use it to get directions and then how to use my AI to get the voice and then how to put it all together",
@@ -576,7 +583,7 @@ portfolio = [
  end: "September 10 ,2024",
  color:"rgb(150,150,250)",
  desc: "Built a LAN-based website with Node.js and Python to manage family photos.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-01-at-9.42.25-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: "Created a simple and efficient photo upload/download system, demonstrating backend skills in Node.js and Python.",
  approach:"used node.js for backend with some python here and there and html css JS for clientside logic",
@@ -589,7 +596,7 @@ portfolio = [
  end: "Janurary 15, 2025",
  color:"rgb(250,25,250)",
 desc: "Webmaster for <a href='https://morpaint.com'>MORPAINT.com</a>, a car paint company.",
- gif:"https://darkslategrey-goldfinch-277950.hostingersite.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-6.33.43-PM.gif",
+ gif:"https://maximsushko.com/wp-content/uploads/2025/02/Screen-Recording-2025-02-03-at-6.33.43-PM.gif",
  mouseEffect:"Soldier",
  Accomplishments: " Collaborated with the owner through multiple iterations to refine the site to their vision.",
  approach:"I used WP and lots of communication between the me and the client to help design it to their liking",
@@ -623,10 +630,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <p style="position: absolute; bottom: 0; left: 3vw; font-size: 2vh; color: white; padding: 5px;"> Total Time: ${Math.floor(totalDays / 30)} months and ${totalDays % 30} days</p>
 
-    <p id="project-description-${index}" class="project-Description">
+    <p id="project-description-${index}" class="project-Description" style="position:relative;">
       <span style="font-size: 4vh;"><strong>Description</strong></span>
     </p>
-    <div id="description-dropdown-content-${index}" class="project-Description-content" style="display: block;">
+    <div id="description-dropdown-content-${index}" class="project-Description-content" style="display: block;position:relative;">
       <p>${project.desc}</p>
     </div>
 
