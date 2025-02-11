@@ -10,38 +10,6 @@
 
 <div class="mobile-warning">⚠️ WARNING: This website is for DESKTOP ONLY! ⚠️</div>
 
-<style>
-  .mobile-warning {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: yellow;
-    color: black;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 5px solid red;
-    animation: blink 1s infinite alternate;
-    display: none;
-  }
-
-  @media (max-width: 768px) {
-    .mobile-warning {
-      display: block;
-    }
-  }
-
-  @keyframes blink {
-    0% { background: yellow; }
-    100% { background: red; color: white; }
-  }
-</style>
-
-
 <div id="portfolio-section"></div>
 
 <div style="position: absolute; top: 975vh; left: 10vw; width: 85vw; text-align: center; background: rgb(150, 150, 150); padding: 10px; border-radius: 10px; box-shadow: 0 0 30px rgb(25, 250, 250); z-index: 1000;">
@@ -98,6 +66,36 @@
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
 <style>
+
+  .mobile-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: yellow;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 5px solid red;
+    animation: blink 1s infinite alternate;
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-warning {
+      display: block;
+    }
+  }
+
+  @keyframes blink {
+    0% { background: yellow; }
+    100% { background: red; color: white; }
+  }
+
 	*{
 		font-weight:600;
         word-wrap:normal !important;
